@@ -13,6 +13,8 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import streamlit as st
 
+st.text('Project Build for hackthon')
+
 choice  = st.sidebar.selectbox('Select from dropdown',options=['HDFC','ONGC','RELIANCE','TCS'])
 df = pd.read_csv('{}.csv'.format(choice),index_col='Date')
 st.write('my name is Harish')
